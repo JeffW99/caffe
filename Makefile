@@ -329,7 +329,7 @@ else
 endif
 
 # cuDNN acceleration configuration.
-ifeq ($(USE_CUDNN), 1)
+ifeq ($(USE_CUDNN), 0)
 	LIBRARIES += cudnn
 	COMMON_FLAGS += -DUSE_CUDNN
 endif
